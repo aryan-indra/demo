@@ -2,12 +2,26 @@
 using namespace std;
 int main()
 {
-    int a[10];
-    for(int i=0;i<10;i++)
+    double a, b;
+    char s;
+    cout<<"Enter two numbers: ";
+    cin>>a>>b;
+    cout<<"Enter operation to be performed: ";
+    cin>>s;
+    switch(s)
     {
-        cin>>i;
-        
+        case '+':
+        cout<<a<<"+"<<b<<"="<<(a+b);
+        break;
+        case '-':
+        cout<<a<<"-"<<b<<"="<<(a-b);
+        break;
+        case '*':
+        cout<<a<<"*"<<b<<"="<<(a*b);
+        break;
+        case '/':
+        cout<<a<<"/"<<b<<"="<<(a/b);
+        break;
+        return 0;
     }
-    cout<<a[i];
-return 0;
 }
